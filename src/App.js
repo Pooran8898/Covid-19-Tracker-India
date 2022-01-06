@@ -26,7 +26,7 @@ export default function App() {
 
   React.useEffect(() => {
     axios
-      .get("https://api.covid19india.org/v4/min/data.min.json")
+      .get("https://data.covid19india.org/v4/min/data.min.json")
       .then((res) => {
         console.log(res.data);
         let countries = res.data;
@@ -46,7 +46,7 @@ export default function App() {
 
   React.useEffect(() => {
     axios
-      .get("https://api.covid19india.org/v4/min/data.min.json")
+      .get("https://data.covid19india.org/v4/min/data.min.json")
       .then((res) => {
         let updated = res.data;
         let empty = [];
